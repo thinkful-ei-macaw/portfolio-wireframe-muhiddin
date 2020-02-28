@@ -16,23 +16,22 @@ main, footer {
 nav,
 footer {
   padding: 1% 0;
-  background-color: rgb(150, 144, 144);
+  background-color:gray;
 }
 
 nav {
   float: left;
   position: fixed;
+  margin: 10% 0;
   left: 0;
-  top: 200px;
   padding: 20px;
-  width: 250px;
-  height: 300px;
+  width: 220px; 
 }
 
 header {
   margin-top: 150px;
   padding: 12% 0;
-  background-color: rgb(209, 197, 197);
+  background-color: rgb(177, 174, 174);
 }
 
 section {
@@ -42,7 +41,38 @@ section {
 }
 
 section:nth-child(even) {
-  background-color: rgb(187, 176, 176);
+  background-color: lightgray;
 }
 
 
+@media screen and (max-width: 700px) {
+  nav {
+    display: none;
+  }
+  header {
+    margin-top: 10px;
+  }
+  main {
+    margin: 1%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    width: 100%;
+    margin: 0;
+  }  
+  header {
+    margin-top: 0;
+  }
+  main {
+    margin: 0;
+  }
+  footer {
+    margin: 0;
+  }
+}
